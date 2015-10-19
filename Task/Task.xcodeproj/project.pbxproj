@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		84024A5A1BD10606008DA097 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84024A591BD10606008DA097 /* main.m */; };
 		84024A5D1BD10606008DA097 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84024A5C1BD10606008DA097 /* AppDelegate.m */; };
-		84024A601BD10606008DA097 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84024A5F1BD10606008DA097 /* ViewController.m */; };
+		84024A601BD10606008DA097 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84024A5F1BD10606008DA097 /* DetailViewController.m */; };
 		84024A631BD10606008DA097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84024A611BD10606008DA097 /* Main.storyboard */; };
 		84024A651BD10606008DA097 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84024A641BD10606008DA097 /* Images.xcassets */; };
 		84024A681BD10606008DA097 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84024A661BD10606008DA097 /* LaunchScreen.xib */; };
@@ -32,8 +32,8 @@
 		84024A591BD10606008DA097 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84024A5B1BD10606008DA097 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84024A5C1BD10606008DA097 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84024A5E1BD10606008DA097 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84024A5F1BD10606008DA097 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84024A5E1BD10606008DA097 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		84024A5F1BD10606008DA097 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		84024A621BD10606008DA097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84024A641BD10606008DA097 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84024A671BD10606008DA097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			children = (
 				84024A5B1BD10606008DA097 /* AppDelegate.h */,
 				84024A5C1BD10606008DA097 /* AppDelegate.m */,
-				84024A5E1BD10606008DA097 /* ViewController.h */,
-				84024A5F1BD10606008DA097 /* ViewController.m */,
+				84024A5E1BD10606008DA097 /* DetailViewController.h */,
+				84024A5F1BD10606008DA097 /* DetailViewController.m */,
 				84024A611BD10606008DA097 /* Main.storyboard */,
 				84024A641BD10606008DA097 /* Images.xcassets */,
 				84024A661BD10606008DA097 /* LaunchScreen.xib */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84024A601BD10606008DA097 /* ViewController.m in Sources */,
+				84024A601BD10606008DA097 /* DetailViewController.m in Sources */,
 				84024A5D1BD10606008DA097 /* AppDelegate.m in Sources */,
 				84024A5A1BD10606008DA097 /* main.m in Sources */,
 			);
@@ -344,8 +344,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Task/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,8 +356,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Task/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +416,7 @@
 				84024A791BD10606008DA097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84024A7A1BD10606008DA097 /* Build configuration list for PBXNativeTarget "TaskTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +425,7 @@
 				84024A7C1BD10606008DA097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
